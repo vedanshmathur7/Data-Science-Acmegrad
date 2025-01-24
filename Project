@@ -1,0 +1,13 @@
+import os
+import pandas as pd
+# ...existing code...
+
+# Step 3: Load and Explore the Data
+data_path = 'parkinsons.data'  # Replace with your dataset path
+
+if os.path.exists(data_path):
+    df = pd.read_csv(data_path)
+else:
+    print(f"File not found: {data_path}")
+    # Handle the error as needed, e.g., exit the script or provide an alternative path
+    exit(1)
